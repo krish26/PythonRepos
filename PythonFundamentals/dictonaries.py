@@ -9,7 +9,7 @@ d2 = {
     }
 
 d3 = {
-    'k1':[{'nest_key':['this is deep',['hello']]}]
+    'k1':[{'nest_key':['this is deep',['hello']]}]  
     }
 
 print(d1.values())
