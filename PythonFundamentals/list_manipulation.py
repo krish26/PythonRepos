@@ -4,4 +4,4 @@ l.append(18)
 l.pop(0)
 #print("list : " , l)
 l.reverse()
-print('reverse list : ' ,l)
+print('reverse list : ' ,l)  #

@@ -21,4 +21,4 @@ first_col = [row[0] for row in matrix]
 print(first_col)
 
 
-
+#

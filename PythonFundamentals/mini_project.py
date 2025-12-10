@@ -10,3 +10,4 @@ print(list_n)
 print(list_n[0] , list_n[-1])
 
 print ( f"my name is {n} and i'm {age} years old ,my favourite subject is {fav_subject} and one of my fav quotes is {fav_quote}")
+ #

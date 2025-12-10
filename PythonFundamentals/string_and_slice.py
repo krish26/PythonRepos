@@ -10,3 +10,4 @@ print(result)
 
 print('the reversed word : ' ,s[::-1])
 
+#

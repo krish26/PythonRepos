@@ -8,3 +8,6 @@ replace= input("which letter you want to replace ")
 replace_with=input("replace with which letter ")
 
 print("chnaged string : " , s.replace(replace,replace_with))
+
+
+#

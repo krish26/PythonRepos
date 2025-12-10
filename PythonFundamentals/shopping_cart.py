@@ -10,3 +10,4 @@ cart.pop(-1)
 print("Items remaining after removing last item  " , cart)
 
 print('first and last ele : ' ,cart[0],cart[-1])
+  #

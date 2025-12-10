@@ -4,4 +4,7 @@ birth_year = input("enter birth year : ")
 
 combi = first_name+last_name+birth_year
 username=combi[::3]
-print("Your username is : ",  username)
+print("Your username is : ",  username)  
+
+
+#
