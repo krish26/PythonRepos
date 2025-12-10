@@ -1,4 +1,6 @@
 """""
+
+9 dec
 my_list=['koumudi',20,100.00,'o',89]
 my_list =my_list+ ['new_item']
 print(my_list *9)
@@ -12,7 +14,6 @@ print(l[100])
 new_list=['a','e','x']
 new_list.sort()
 print(new_list)
-"""
 
 lst_1=[1,2,3]
 lst_2=[4,5,6]
@@ -23,5 +24,185 @@ print(matrix[0][0])
 
 first_col = [row[0] for row in matrix]
 print(first_col)
+
+
+#10 dec
+
+#dictonary
+
+my_dictonary = {
+    1:'value one',
+    3:'value two',
+    3:'value threee',
+    'three' :56,
+    4:['name_one' , 'name_two']
+}
+
+
+my_dictonary[4]+=['name_three']
+
+my_dictonary[1] ='updated vaue'
+print(my_dictonary)
+print(my_dictonary[3].upper()) #value three is printed insted of value two 
+
+
+
+new_dictonary={}
+new_dictonary['animal'] = 'cat' #added key and value
+new_dictonary['answer'] = 100
+print(new_dictonary)
+
+
+nested_dictonary={
+    'person1' :{
+        'name' : {
+            'first' :'krishna',
+            'last' :'koravi'
+        },
+        'age' : 28
+    },
+
+    'person2' :{
+        'name' : 'koumudi',
+        'age' : 28
+    },
+}
+print(nested_dictonary['person1']['name']['last'])
+dictonary ={
+    'key1':1,
+    'key2':2,
+    'key3':3
+}
+
+print(dictonary.keys()) #gets all keys keys() is a method
+print(dictonary.values()) #print values
+print(dictonary.items()) #gives values inside a tuple inside list
+
+
+#tuple
+
+my_tuple =(1,2,3,'koumudi',3)
+print(len(my_tuple))
+print(my_tuple)
+print(my_tuple[-1])
+print(my_tuple.index('koumudi'))
+print(my_tuple.count(3))
+
+
+#sets
+
+my_set = {1,2,3,4}
+my_set.add(6)
+my_set.add(3)
+
+print(my_set)
+
+
+my_list =[1,1,2,1,3,4,4,5,5,6,6,7,7,8]
+print(set(my_list))
+
+
+#boolen
+
+
+print(1>2)
+
+
+#control flow
+
+print(2>1)
+print(1<2)
+print(1<=1)
+
+
+
+print(1 =='1')   #in javascript we can compare a string to int it become true but in python its false 
+print('one' =='one') #true
+print('hi' =='bye') #false
+print (1!=2) #true
+
+#logical operators
+
+print((1<2 and 2<3)) #true
+print((1<2 or 3>4))  #true
+
+
+#indentation & if statment
+
+if 1<2 :
+    print('yes')
+else:
+    print('no')
+
+
+if 1==2:
+    print('first')
+elif 3==3:
+    print('middle')
+else:
+    print('last')
+
+
+
+#loops
+
+sequence =[1,2,3,4,5]  #list data
+
+for i in sequence:    #i represents every ele. in sequence 
+    print(i)
+
+
+for i in sequence:
+    print('yes',end=' ')  # this prints yes 5 times
+
+    
+    
+    #loop through dictonary
+
+ages = {
+    'john':4,
+    'doe' :5,
+    'moe' :10
+}
+
+for key in ages:
+    print("this is the key: ", key)
+    print("this is the value : " , ages[key] ,'\n')
+
+
+#tuple unpacking 
+
+mypairs =[(1,10) , (2,3) , (6, 7)]
+
+for tup in mypairs:
+    print(tup)
+
+for item1,item2 in mypairs:
+    print(item1)
+    print(item2)
+
+#if no pairs then there will be type error coz no pairs to unpack
+
+#if 3 values then error coz too many values 
+
+
+"""
+
+
+
+
+#while loop 
+
+
+i=1
+while i < 5:
+    print("i is : {} " .format(i))
+    i+=1
+
+    
+
+
+
+
 
 
