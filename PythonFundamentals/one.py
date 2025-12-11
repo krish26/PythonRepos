@@ -191,19 +191,25 @@ for item1,item2 in mypairs:
 
 #while loop 
 
-
 i=1
 while i < 5:
     print("i is : {} " .format(i))
     i+=1
+"""
+
+
+
+s='koumudi'
+
+
+
 
     
 
     #11 dec 
 
     #list comprehension
-
-    x=[1,2,3]
+x=[1,2,3]
 out=[]
 
 for item in x:
@@ -307,36 +313,5 @@ def fun3(a,b, *args , name='koumu' , **kwargs):
     print('kwargs={}'.format(kwargs))
 
 fun3(1,2,3,name='krishna' , age=28,email='koumudi@email.com')
-
-"""
-
-
-
-
-num=[1,2,3,4]
-
-def even(num):
-    return num %2==0
-
-result=filter(even,num)
-print(list(result))
-
-
-
-
-   
-    
-
-
-
-   
-
-    
-
-    
-
-
-
-
 
 
