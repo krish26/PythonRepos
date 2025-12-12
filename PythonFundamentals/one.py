@@ -195,7 +195,6 @@ i=1
 while i < 5:
     print("i is : {} " .format(i))
     i+=1
-"""
 
 
 
@@ -315,3 +314,86 @@ def fun3(a,b, *args , name='koumu' , **kwargs):
 fun3(1,2,3,name='krishna' , age=28,email='koumudi@email.com')
 
 
+
+#12 dec
+
+
+x=15
+
+def printer():
+    x=30
+    return x
+print(x)
+print(printer())
+print(x)
+
+#python Scopes
+
+# 1. Name assignment will create or change local names vy default
+# 2. Name references search (at most) four scopes, these are: (LEGB rule)
+    # Local- Name assigned in any way within a function (def or lambda) and not declared global in that function
+    # Enclosing functions - Name in the local scope of any and all enclosing func, inner or outer
+    # Global - Names assigned at the top-level of a module file, or declared globaly in a def within a file
+    # Built-in - Built-in names, module, range.....(all that is built in)
+# 3. Names declared in global and nonlocal statement map assigned names to enclosing module and function scopes
+
+
+#local
+f=lambda x:x**2
+
+#enclosing fn
+
+name='is is global name'
+
+def greet():
+    name='kk'
+
+    def hello():
+        print('hello',name)
+    hello()
+greet()
+
+#global scope
+print(name)
+
+#build in 
+
+len()
+x=50
+def fun(x):
+    print('x is ', x)
+    x=2
+    print('change local x to ' , x)
+fun(x)
+print('x is still', x)
+
+
+
+name='is is global name'
+
+def greet():
+    name='kk'
+
+    def hello():
+        name='not kk'
+        print('hello',name)
+    hello()
+greet()
+
+"""
+
+
+
+x=50
+
+def fun():
+    global x
+    print('this fn is now using global x')
+    print('becoz of global x is :',x)
+    x=2
+    print('ran fun() ahanged global to ' , x)
+
+print('before calling fun() x is ', x)
+fun()
+print('value of x outside of fun() is ', x)
+    
