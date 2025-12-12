@@ -380,10 +380,6 @@ def greet():
     hello()
 greet()
 
-"""
-
-
-
 x=50
 
 def fun():
@@ -396,4 +392,55 @@ def fun():
 print('before calling fun() x is ', x)
 fun()
 print('value of x outside of fun() is ', x)
+class sample():
+    pass
+
+x= sample()
+print(type(x))
+
+class Dog():
+    #class obj attribute
+    species='mamel'
+
+    def __init__(self,breed,name):
+        self.breed=breed
+        self.name=name
+
+milo=Dog('lab','milo')
+
+"""
+
+class Circle:
+    pi=3.14
+   #Circle get instantiated with radius
+    def __init__(self,radius=1):
+        self.radius=radius
+   
+   #area method cal are , use of self
+    def area(self):
+        return self.radius *self.radius *Circle.pi
+    
+    #method for resetting radius
+    def setRadius(self,radius):
+        self.radius=radius
+
+   #method to getting radius
+    def getRadius(self):
+        return self.radius
+    
+c=Circle()
+c.setRadius(2)
+print('Area is ', c.area())
+
+
+
+
+
+
+
+
+
+
+
+
     
